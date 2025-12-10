@@ -22,6 +22,10 @@ function cleanAnnotations() {
     }
     span.replaceWith(fragment);
   });
+
+  document.querySelectorAll('.LyricsHighlightTooltipContainer').forEach(el => {
+    el.remove();
+  });
 }
 
 function startCleaning() {
